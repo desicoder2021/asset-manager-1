@@ -4,7 +4,7 @@ import { Message } from "primereact/message";
 
 const NotFound = () => {
   const location = useLocation();
-  console.log("location", location);
+
   const content = <div>No route available for {location.pathname} url</div>;
 
   return (
