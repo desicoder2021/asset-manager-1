@@ -116,6 +116,7 @@ const NavigationBar = () => {
           </NavLink>
         ))} */}
       <Menubar model={menu} start={start} end={end} />
+
       {/* <Menubar
           model={menu.map((m) => (
             <NavLink tag={m.tag} key={m.key} to={m.to}>
