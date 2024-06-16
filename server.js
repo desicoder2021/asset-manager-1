@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const PORT = process.env.PORT || 5000;
 const connectDB = require("./config/db");
 require("dotenv").config();
@@ -9,6 +10,9 @@ const assetsRoutes = require("./routes/assets");
 
 // app
 const app = express();
+
+// Enable CORS for all routes
+app.use(cors());
 
 app.use(express.json({ extended: false }));
 

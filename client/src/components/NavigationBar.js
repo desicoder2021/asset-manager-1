@@ -60,6 +60,7 @@ const NavigationBar = () => {
             command: () => {
               navigate("/assets");
             },
+
             // url: "/assets",
 
             // tag: Link,

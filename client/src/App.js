@@ -10,6 +10,7 @@ import NavigationBar from "./components/NavigationBar";
 // import routes from "./routes";
 import NotFound from "./components/NotFound";
 import About from "./components/About";
+import Home from "./components/Home";
 
 function App() {
   // const content = useRoutes(routes);
@@ -30,7 +31,7 @@ function App() {
       <BrowserRouter>
         <NavigationBar />
         <Routes>
-          <Route path='/'>dfsdfs</Route>
+          <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
